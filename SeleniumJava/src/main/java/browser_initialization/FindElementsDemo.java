@@ -9,7 +9,7 @@ public class FindElementsDemo extends Base{
 	
 	public void findElementsTest() {
 		driver.navigate().to("https://selenium.qabible.in/simple-form-demo.php");
-		List<WebElement> textFields = driver.findElements(By.xpath("//input[@type='text']"));
+		List<WebElement> textFields = driver.findElements(By.xpath("//input[@type='text']"));//store multiple web elements in list
 		for(WebElement element: textFields) {
 				element.sendKeys("Hello");
 		}
